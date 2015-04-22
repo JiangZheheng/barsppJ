@@ -7,6 +7,7 @@ Student NO:40108307
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/beer_texture1957"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -17,30 +18,11 @@ Student NO:40108307
     Add the text of"Please Login" at the top of the screen and set its clour, 
     size and the distance to the top of the screen 
     -->
-    <TextView
-        android:id="@+id/pleaseLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:text="@string/please_login"
-        android:textColor="#000000"
-        android:textSize="24sp" />
 
     <!--
     Add the text of "Username" below the text of "Please Login" and set its size 
     and the distance to the "Please Login" text
     -->
-    <TextView
-        android:id="@+id/userName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/pleaseLogin"
-        android:layout_marginTop="60dp"
-        android:text="@string/username"
-        android:textSize="20sp" />
 
     <!--
     Add the editText at the right side of the "userName" text and set its hint 
@@ -125,7 +107,8 @@ Student NO:40108307
         android:layout_below="@id/attemptsLeft"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="@string/login_now" />
+        android:text="@string/login_now"
+         />
     
         <Button
         android:id="@+id/register"
@@ -135,5 +118,15 @@ Student NO:40108307
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Register" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="158dp"
+            android:text="@string/username"
+            android:textSize="20sp" />
 
 </RelativeLayout>
