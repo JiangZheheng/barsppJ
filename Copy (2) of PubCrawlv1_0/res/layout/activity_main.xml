@@ -1,0 +1,139 @@
+<!-- 
+Student Name:Jiang Zheheng
+Student NO:40108307
+ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.version1_0.ClubCrawl.DrinkSelection" >
+
+    <!-- 
+    Add the text of"Please Login" at the top of the screen and set its clour, 
+    size and the distance to the top of the screen 
+    -->
+    <TextView
+        android:id="@+id/pleaseLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/please_login"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <!--
+    Add the text of "Username" below the text of "Please Login" and set its size 
+    and the distance to the "Please Login" text
+    -->
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pleaseLogin"
+        android:layout_marginTop="60dp"
+        android:text="@string/username"
+        android:textSize="20sp" />
+
+    <!--
+    Add the editText at the right side of the "userName" text and set its hint 
+    and the distance to the "Username" text
+    -->
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userName"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/userName"
+        android:hint="" />
+
+    <!--
+    Add the text of "Password" below the text of "Username" and set its size 
+    and the distance to the "Username" text
+    -->
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="30dp"
+        android:text="@string/password"
+        android:textSize="20sp" />
+
+    <!--
+    Add the editText at the right side of the "Password" text and set its hint 
+    and the distance to the "Password" text, it also make the input type as a password
+    -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/password"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/password"
+        android:hint=""
+        android:inputType="textPassword" />
+
+    <!--
+    Add the text of "AttemptsLeft" below the text of "Password" and set its size 
+    and the distance to the "Username" text 
+    -->
+    <TextView
+        android:id="@+id/attemptsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/attempts_left"
+        android:textSize="20sp" />
+
+    <!--
+    Add the Text at the right side of the "AttemptsLeft" text and set its size 
+    and the distance to the "AttemptsLeft" text
+    -->
+    <TextView
+        android:id="@+id/leftNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/attemptsLeft"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:text="@string/leftNmber"
+        android:textSize="20sp" />
+
+    <!--
+    Add the button below the text of "AttemptsLeft" and set its distance 
+    to the "AttemptsLeft" text
+    -->
+    <Button
+        android:id="@+id/loginNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attemptsLeft"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/login_now" />
+    
+        <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginNow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Register" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Student Name:Jiang Zheheng
+	Student No:40108307  
+-->
+<resources>
+
+    <string name="app_name">ClubCrawl</string>
+    <string name="action_settings">Settings</string>
+    <string name="please_login">Please Login</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="attempts_left">Attempts Left:</string>
+    <string name="leftNmber">3</string>
+    <string name="login_now">LOGIN NOW</string>
+    <string name="setting">Setting</string>
+    <string name="close_music">Close Music</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="btnPlan">Plan Crawl</string>
+    <string name="btnQuick">Quick Drink</string>
+    <string name="title_activity_plan_crawl">PlanCrawl</string>
+    <string name="title_activity_crawling">Crawling</string>
+     <string name="textQuick">Your Nearest Watering Holes&#8230;</string>
+
+</resources>

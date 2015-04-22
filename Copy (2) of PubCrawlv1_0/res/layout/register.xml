@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/TV_registerPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Register Page"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    
+        <!--
+    Add the text of "Username" below the text of "Please Login" and set its size 
+    and the distance to the "Please Login" text
+    -->
+    <TextView
+        android:id="@+id/TV_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/TV_registerPage"
+        android:layout_marginTop="60dp"
+        android:text="@string/username"
+        android:textSize="20sp" />
+
+    <!--
+    Add the editText at the right side of the "userName" text and set its hint 
+    and the distance to the "Username" text
+    -->
+    <EditText
+        android:id="@+id/ET_editUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TV_userName"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/TV_userName"
+        android:hint="" />
+
+    <!--
+    Add the text of "Password" below the text of "Username" and set its size 
+    and the distance to the "Username" text
+    -->
+    <TextView
+        android:id="@+id/TV_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/TV_userName"
+        android:layout_marginTop="30dp"
+        android:text="@string/password"
+        android:textSize="20sp" />
+
+    <!--
+    Add the editText at the right side of the "Password" text and set its hint 
+    and the distance to the "Password" text, it also make the input type as a password
+    -->
+    <EditText
+        android:id="@+id/ET_editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TV_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/TV_password"
+        android:hint=""
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/TV_confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/TV_password"
+        android:layout_below="@id/TV_password"
+        android:layout_marginTop="30dp"
+        android:text="Confirm Password"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ET_editConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TV_confirmPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/TV_confirmPassword"
+        android:hint=""
+        android:inputType="textPassword" />
+    
+    <!--
+    Add the button below the text of "AttemptsLeft" and set its distance 
+    to the "AttemptsLeft" text
+    -->
+    <Button
+        android:id="@+id/B_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_editConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Submit" />
+
+    
+
+</RelativeLayout>
